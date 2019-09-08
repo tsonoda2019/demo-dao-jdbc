@@ -25,6 +25,12 @@ public class Program2 {
 		for (Department deplist : list) {
 			System.out.println(deplist);
 		}
+		
+		System.out.println();
+		System.out.println("=== TEST 3: department insert ===");
+		Department newDepartment = new Department(null, "Music");
+		departmentDao.insert(newDepartment);
+		System.out.println("Inserted! New id: " + newDepartment.getId());
 
 		
 		sc.close();
